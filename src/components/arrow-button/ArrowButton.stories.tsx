@@ -15,7 +15,7 @@ export const ArrowButtonStory: Story = {
 			<>
 				<ArrowButton
 					onClick={() => {
-						/**/
+						//Передаем обработчик клика
 					}}
 					state={true}
 				/>
