@@ -14,6 +14,15 @@
 	background: var(--gold, #ffc802);
 }
 
+.button:last-of-type {
+	background: #ffc802;
+}
+
 .button:hover {
-	background: var(--gold, #ffc802);
+	background: #ffedab;
+}
+
+button:first-of-type:hover {
+	color: #ffffff;
+	background: #000000;
 }

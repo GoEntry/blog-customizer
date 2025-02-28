@@ -1,21 +1,27 @@
 .container {
 	position: fixed;
-	left: 0;
-	width: 616px;
+	left: -616px; /* Начальная позиция за пределами экрана */
+	width: 616px; /* Ширина панели */
 	height: 100%;
 	overflow: scroll;
-	transform: translate(-616px);
-	transition: transform 0.5s ease;
+	overflow: hidden;
+	transform: translateX(0); /* Начальное положение */
+	transition: transform 0.5s ease; /* Анимация перемещения */
+
+	&.container_open {
+		transform: translateX(100%); /* При открытии панель перемещается на экран */
+	}
 }
 
-.container_open {
-	transform: translate(0);
+.container::-webkit-scrollbar {
+	display: none;
 }
 
 .form {
 	display: flex;
 	flex-shrink: 0;
 	flex-direction: column;
+	gap: 30px;
 	box-sizing: border-box;
 	width: 616px;
 	height: auto;
