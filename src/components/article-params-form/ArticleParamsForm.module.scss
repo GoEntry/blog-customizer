@@ -4,7 +4,6 @@
 	width: 616px; /* Ширина панели */
 	height: 100%;
 	overflow: scroll;
-	overflow: hidden;
 	transform: translateX(0); /* Начальное положение */
 	transition: transform 0.5s ease; /* Анимация перемещения */
 
@@ -21,7 +20,7 @@
 	display: flex;
 	flex-shrink: 0;
 	flex-direction: column;
-	gap: 30px;
+	gap: 25px;
 	box-sizing: border-box;
 	width: 616px;
 	height: auto;
